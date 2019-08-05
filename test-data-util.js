@@ -36,16 +36,6 @@ const testData = [
   }
 ];
 
-/*const CardList = (props) => (
-  <div>
-    <Card {...testData[0]} />
-    <Card {...testData[1]} />
-    <Card {...testData[2]} />
-    <Card {...testData[3]} />
-    <Card {...testData[4]} />
-  </div>
-);*/
-
 const CardList = (props) => (
   <div>
     {testData.map(profile => <Card {...profile}/>)}
@@ -79,11 +69,11 @@ class App extends React.Component {
 }
 
 /*const App = ({title}) => (
-	<div className="header">{title}</div>
-	);
+  <div className="header">{title}</div>
+  );
 */
 
 ReactDOM.render(
-	<App title="The GitHub Cards App" />,
-	mountNode,
+  <App title="The GitHub Cards App" />,
+  mountNode,
 );
